@@ -3,7 +3,8 @@ nano Dockerfile
 
 #
 FROM mysql:latest
-RUN chown -R mysql:mysql /var/lib/mysql
+RUN chown -R 1000:1000 /var/lib/mysql
+RUN chmod -R 777 /var/lib/mysql
 CMD ["mysqld"]
 #
 
