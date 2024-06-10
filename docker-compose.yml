@@ -1,8 +1,19 @@
 
+nano Dockerfile
+
+#
+FROM mysql:latest
+RUN chown -R mysql:mysql /var/lib/mysql
+CMD ["mysqld"]
+#
+
+docker build -t mysql:chown .
+
+##
 version: "2.2"
 services:
   db:
-    image: mysql:5.7
+    image: mysql:chown
     restart: always
     volumes:
       - nfsvolume:/var/lib/mysql:rw
@@ -34,3 +45,8 @@ volumes:
       type: "nfs"
       o: "addr=192.168.0.96,rw,nfsvers=4"
       device: ":/nfs-share"
+
+##
+
+
+
