@@ -8,7 +8,9 @@ RUN chmod -R 777 /var/lib/mysql
 CMD ["mysqld"]
 #
 
-docker build -t mysql:chown .
+docker build -t mysql:paulco .
+
+nano docker-compose.yml
 
 ##
 version: "2.2"
