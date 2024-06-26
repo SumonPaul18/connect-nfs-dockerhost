@@ -6,6 +6,12 @@ Create a Directory for NFS Share
     mkdir -p /nfs-share
     chown -R nobody:nogroup /nfs-share
 ####
+If we have child directory, so then same procedure for share that directory. </br>
+I have a directory in /nfs-share this directory already shared on NFS. Now i create another directory in /nfs-share/wordpress
+####
+    mkdir -p /nfs-share/wordpress
+    chown -R nobody:nogroup /nfs-share/wordpress
+####
 Now, adding this directory path in /etc/exports files:
 ####
     nano /etc/exports
