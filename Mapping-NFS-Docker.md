@@ -12,6 +12,8 @@ I have a directory in /nfs-share this directory already shared on NFS. Now i cre
     mkdir -p /nfs-share/wordpress
     chown -R nobody:nogroup /nfs-share/wordpress
 ####
+Now, adding this new created directory path in /etc/exports files.
+####
 Now, adding this directory path in /etc/exports files:
 ####
     nano /etc/exports
