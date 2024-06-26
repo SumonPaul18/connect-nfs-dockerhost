@@ -3,8 +3,8 @@ If we want to use NFS Stoarge with Docker Container. We need to 1st create direc
 - <b>From NFS Server</b></br>
 Create a Directory for NFS Share
 ####
-    mkdir nfs-share
-    chown -R nobody:nogroup nfs-share
+    mkdir /nfs-share
+    chown -R nobody:nogroup /nfs-share
 ####
 Now, adding this directory path in /etc/exports files:
 ####
