@@ -1,12 +1,12 @@
 ### Docker and NFS Storage
 If we want to use NFS Stoarge with Docker Container. We need to 1st create directory and change owner for NFS Share from <b>NFS Server</b>.- 
-- <b>From NFS Server</b>.
+- <b>From NFS Server</b></br>
 Create a Directory for NFS Share
 ####
     mkdir nfs-share
     chown -R nobody:nogroup nfs-share
 ####
-Now, adding this directory path in /etc/exports file:
+Now, adding this directory path in /etc/exports files:
 ####
     nano /etc/exports
 ####
@@ -20,4 +20,5 @@ Now, adding this directory path in /etc/exports file:
     /nfs-share/docker/wpdata 192.168.0.0/24(rw,sync,no_root_squash)
 
 ####
-- <b>Now, From Docker Host</b>.
+- <b>Now, From Docker Host</b></br>
+
