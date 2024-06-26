@@ -1,5 +1,5 @@
 ### Docker and NFS Storage
-If we want to use NFS Stoarge with Docker Container. We need to 1st create directory and change owner for NFS Share from <b>NFS Server</b>.- 
+If we want to use NFS Stoarge with Docker Container. We need to 1st create directory and change owner for NFS Share from <b>NFS Server</b>
 - <b>From NFS Server</b></br>
 Create a Directory for NFS Share
 ####
