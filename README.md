@@ -24,9 +24,9 @@ Example: 192.168.0.0/24 here, NFS Server & NFS Client have in a same network and
 ####
     /nfs-share 192.168.0.0/24(rw,sync,no_subtree_check,no_root_squash)
     /nfs-share/wordpress 192.168.0.0/24(rw,sync,no_subtree_check,no_root_squash)
-    /nfs-share/docker/wordpress-data 192.168.0.0/24(rw,sync,no_root_squash)
-    /nfs-share/docker/web 192.168.0.0/24(rw,sync,no_root_squash)
-    /nfs-share/docker/wordpress-data/mysql 192.168.0.0/24(rw,sync,no_root_squash)
+    /nfs-share/docker/wordpress-data 192.168.0.0/24(rw,sync,no_subtree_check,no_root_squash)
+    /nfs-share/docker/web 192.168.0.0/24(rw,sync,no_subtree_check,no_root_squash)
+    /nfs-share/docker/wordpress-data/mysql 192.168.0.0/24(rw,sync,no_subtree_check,no_root_squash)
     /nfs-share *(rw,sync,no_subtree_check,no_root_squash)
     
 ####
